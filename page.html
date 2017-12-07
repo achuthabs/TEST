@@ -1,0 +1,252 @@
+﻿<html>
+<head>
+<meta charset="utf-8">
+<title>PAGE LAYOUT</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+body{
+margin:0;
+}
+
+.outer_container {
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+}
+
+.inner_container{
+left:40%;
+margin-top:10%;
+position: relative;
+padding:2px;
+background-color:black;
+border-radius:10px;
+width:500px;
+height:400px;
+text-align:center;
+}
+
+.close-icon{
+color:#7FFFD4;
+font-weight:bolder;
+font-size:24px;
+width:50px;
+height:50px;
+margin-top:70px;
+}
+
+.icons{
+border-left:1px solid white;
+border-right:1px solid white;
+width:250px;
+height:50px;
+float:left;
+text-align:center;
+margin-left:40%;
+}
+
+.side-content{
+text-align:center;
+width:100px;
+height:800px;
+position:fixed;
+top:0px;
+background-color:#2f4f4f;
+left:0px;
+}
+
+.header {
+background-color:lightgrey;
+width: 93%;
+margin-left:7%;
+height:70px;
+font-size: 4em;
+text-align: center;
+right: 0;
+position: absloute;
+}
+
+.panel {
+border: 1px solid white;
+width:92%;
+font-size:3em;
+border-radius: 15px;
+text-align: center;
+background-color: lightgray;
+padding: 3px;
+height:70px;
+margin-left:10%;
+border-left-color: cyan;
+right: 0;
+position: absloute;
+}
+
+.box {
+border: 1px solid white;
+width:100%;
+text-align: center;
+background-color: lightgray;
+padding: 3px;
+height:200px;
+right: 0;
+}
+
+#modal-content{
+width:450px;
+margin-left:20px;
+height:270px;
+background-color:white;
+border-bottom-left-radius:20px;
+border-bottom-right-radius:20px;
+}
+
+.design{
+background-color:#7FFFD4;
+margin-left:90px;
+width:250px;
+height:50px;
+box-shadow:3px 4px grey;
+border-bottom-left-radius:20px;
+border-bottom-right-radius:20px;
+} 
+
+.footer {
+border: 1px solid white;
+background-color: lightgray;
+padding: 1px;
+height:53px;
+text-align:center;
+position: fixed;
+right: 0;
+bottom: 0;
+left: 0;
+}
+
+.blur {
+filter: blur(3px);
+-webkit-filter:blur(3px);
+-moz-filter:blur(3px);
+ -ms-filter:blur(3px);     
+}
+
+.line {
+border-top:1px solid white;
+border-bottom:1px solid white;
+width:250px;
+height:50px;
+text-align:center;
+}
+
+#icon:hover{
+cursor: pointer;
+text-decoration: none;
+background-color: #000;
+}
+
+#left_arrow{
+cursor: pointer;
+margin:0;
+padding:5px;
+width: 56px;
+height: 50px;
+background-color: #7FFFD4;
+text-decoration: none;
+}
+    
+#right_arrow{
+cursor: pointer;
+margin-top:1%;
+padding:4px;
+width: 56px;
+height: 50px;
+background-color: #7FFFD4;
+text-decoration: none;
+}  
+
+#left_arrow:hover{
+background-color: #E0FFFF;
+text-decoration: none;
+}
+    
+#right_arrow:hover{
+background-color: #E0FFFF;
+text-decoration: none;
+}
+    
+#icon_btn:hover{
+cursor: pointer;
+background-color: #696969;
+text-decoration: none;
+}
+
+#inner_icon:hover{
+cursor: pointer;
+background-color: #E0FFFF;
+text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<div class="outer_container blur">
+<div class="side-content">
+<div><a id="icon" class="fa fa-bank fa-3x" style="color:white;padding:20px;margin-top:30px;"></a></div>
+<div><a id="icon" class="fa fa-address-book fa-3x" style="color:white;padding:20px;"></a></div>
+<div><a id="icon" class="fa fa-home fa-3x" style="color:white;padding:20px;"></a></div>
+<div class="line"></div>
+<div><a id="icon" class="fa fa-play fa-3x" style="color:white;padding:20px;" ></a></div>
+<div><a id="icon" class="fa fa-volume-up fa-3x" style="color:white;padding:20px;"></a></div>
+<div><a id="icon" class="fa fa-repeat fa-3x" style="color:white;padding:20px;"></a></div>
+</div>
+<div class="header blur">Main Title Goes Here</div><br>
+<div class="panel">Heading of Page</div><br>
+<div class ="box">
+Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. 
+With Cascading Style Sheets (CSS) and JavaScript it forms a triad of cornerstone technologies for the World Wide Web.[3] 
+Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. 
+HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. 
+It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. 
+HTML elements are delineated by tags, written using angle brackets. Tags such as introduce content into the page directly. 
+Others such as surround and provide information about document text and may include other tags as sub-elements. 
+Browsers do not display the HTML tags, but use them to interpret the content of the page.
+HTML can embed programs written in a scripting language such as JavaScript which affect the behavior and content of web pages. 
+Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), 
+maintainer of both the HTML and the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.[4]
+</div>
+</div>
+
+
+<div class="inner_container" id="modal">
+<h3 style="color:white;text-align:left;margin-left:17px;">GLOSSARY</h3>
+<div id="modal-content">
+<div class="design">
+<a id="inner_icon" class="fa fa-download fa-2x" style="color:black;padding:4px;"></a>
+<a id="inner_icon" class="fa fa-envelope fa-2x" style="color:black;padding:4px;"></a>		
+<a id="inner_icon" class="fa fa-print fa-2x" style="color:black;padding:4px;"></a>
+</div><br>
+Buyer - The person who has the responsibilty to execute a purchase
+</div>
+<a id="icon" class="fa fa-times"  style="float:right;font-size:36px;margin-top:6%;margin-right:2%;"></a>
+</div>
+
+
+<div class="footer">
+<div class="left-arrow" style="float:left;">
+<a id="left_arrow" class="fa fa-angle-left" style="font-size:36px"></a>
+</div>
+<div class="icons">
+<a id="icon_btn" class="fa fa-repeat fa-2x" style="color:black;padding:20px;"></a>
+<a id="icon_btn" class="fa fa-play fa-2x" style="color:black;padding:20px;"></a>
+<a id="icon_btn" class="fa fa-volume-up fa-2x" style="color:black;padding:20px;"></a>
+</div>
+<div class="right-arrow" style="float:right;margin-right:0px;">
+<a id="right_arrow" class="fa fa-angle-right" style="font-size:36px"></a>
+</div>
+</div>
+
+</body>
+</html>
